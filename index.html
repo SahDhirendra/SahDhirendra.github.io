@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2298,3 +2299,679 @@
 </script>
 </body>
 </html>
+=======
+  <head>
+    <title>Dhirendra Sah Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Dhirendra Sah</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Background_1.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Dhirendra Sah</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Mechanical Engineer',
+						// 'YouTuber  ',
+						// 'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2> Control Engineer I </h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p>
+							<a href="https://github.com/SahDhirendra" class="btn btn-primary py-3 px-4">My Works</a> 
+							<!-- <a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about_me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s"><b>Name:</b> </span> <span> Dhirendra Sah </span></p>
+										<p><span class="title-s"><b>Job Role:</b> </span> <span> Control Engineer I</span></p>
+										<p><span class="title-s"><b>Experience: </b> </span> <span>Over 2 Years</span></p>
+										<p><span class="title-s"><b>Address:</b> </span> <span>Fargo, North Dakota, USA </span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Control Systems</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Programming</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Tools &amp; Platforms </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Networks &amp; Protocols </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Documentation</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+									<style>
+									.center-justified {
+										text-align: justify;
+										width : 100% ;
+										margin: 50px auto;
+									}
+
+									</style>
+									</head>
+									<body>
+									<div class ="center-justified">
+									<p> I am a results-driven Process Automation Engineer with over two years of hands-on experience in industrial automation, control systems, and mechatronics. Throughout my career, 
+										I’ve successfully delivered complex automation projects that have optimized production workflows and minimized operational errors through innovative control solutions.
+										My expertise spans PLC programming, industrial sensors, control hardware and software integration, as well as implementing safety interlocks. I am passionate about solving 
+										engineering challenges that drive efficiency and reliability in industrial operations. Currently, I am advancing my knowledge by pursuing a Master’s degree in Mechanical Engineering, 
+										building on my strong foundation in mechatronics and software engineering.</p>
+								
+								<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>Automation &amp; Control Engineering</span></li>
+								<li class="d-flex"><span>Domain:</span> <span>Manufacturing &amp; production </span></li>
+								<li class="d-flex"><span>Education:</span> <span>Master of Science</span></li>
+								<li class="d-flex"><span>Language:</span> <span>English, Nepali, Hindi</span></li>
+								<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+								<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+								<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Researching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/dhirendrasah" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          	<div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+				<style>
+				.center-justified {
+					text-align: justify;
+					width : 100% ;
+					margin: 50px auto;
+				}
+				</style>
+				</head>
+				<body>
+				<div class ="center-justified">
+            	<p>Results-driven Process Automation Engineer with 2+ years of experience in industrial automation, control systems, and 
+				mechatronics. Proven track record in delivering complex automation projects, optimizing production processes, and reducing 
+				operational errors through innovative control strategies. Skilled in PLC programming, industrial sensors, control hardware/software, 
+				and safety interlocks. Currently pursuing M.S. in Mechanical Engineering with a strong foundation in mechatronics and software engineering.</p>
+          		</div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Aug, 2022- May, 2025</span>
+						<h2>Graduate Teaching Assistant</h2>
+						<span class="position">North Dakota State University</span>
+						<p class="mt-4">North Dakota State University is a student-focused, land-grant, research university -- an economic engine that educates students, conducts primary research, creates new knowledge and advances technology. 
+							<ul>
+								<li>Conducted 𝐌𝐞𝐚𝐬𝐮𝐫𝐞𝐦𝐞𝐧𝐭 𝐋𝐚𝐛 of 75+ students to perform various measurement experiments in 𝐋𝐚𝐛𝐕𝐢𝐞𝐰 using 𝐃𝐀𝐐'𝐬 𝐬𝐲𝐬𝐭𝐞𝐦 such as 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐬𝐚𝐦𝐩𝐥𝐢𝐧𝐠, 𝐒𝐢𝐠𝐧𝐚𝐥 𝐟𝐢𝐥𝐭𝐞𝐫𝐢𝐧𝐠, 𝐓𝐡𝐞𝐫𝐦𝐨𝐦𝐞𝐭𝐫𝐲, 𝐒𝐭𝐫𝐚𝐢𝐧 𝐠𝐚𝐮𝐠𝐢𝐧𝐠, and 𝐈𝐧𝐭𝐞𝐫𝐟𝐞𝐫𝐨𝐦𝐞𝐭𝐫𝐲.</li>
+								<li>Helped students with 𝐜𝐚𝐥𝐢𝐛𝐫𝐚𝐭𝐢𝐨𝐧 and 𝐞𝐫𝐫𝐨𝐫 𝐚𝐧𝐚𝐥𝐲𝐬𝐢𝐬 of equipment like 𝐨𝐬𝐜𝐢𝐥𝐥𝐨𝐬𝐜𝐨𝐩𝐞𝐬, 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫𝐬, and 𝐩𝐫𝐨𝐭𝐨𝐛𝐨𝐚𝐫𝐝 to attain 𝐩𝐫𝐞𝐜𝐢𝐬𝐢𝐨𝐧, and 𝐚𝐜𝐜𝐮𝐫𝐚𝐜𝐲 to get the desired result.</li>
+								<li>Guided 50+ students to learn 𝐌𝐀𝐓𝐋𝐀𝐁 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 fundamentals, 𝐚𝐥𝐠𝐨𝐫𝐢𝐭𝐡𝐦 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, and 𝐝𝐞𝐛𝐮𝐠𝐠𝐢𝐧𝐠 to solve real-life scenario engineering problems.</li>
+								<li>Contributed to research focusing on 𝐦𝐨𝐝𝐞𝐥𝐢𝐧𝐠 and 𝐜𝐨𝐧𝐭𝐫𝐨𝐥 of 𝐮𝐧𝐦𝐚𝐧𝐧𝐞𝐝 𝐠𝐫𝐨𝐮𝐧𝐝 𝐯𝐞𝐡𝐢𝐜𝐥𝐞𝐬 (𝐔𝐆𝐕) for fast maneuvering in 𝐦𝐚𝐩𝐥𝐞𝐬𝐬 𝐞𝐧𝐯𝐢𝐫𝐨𝐧𝐦𝐞𝐧𝐭𝐬.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Aug, 2019 - Aug, 2021</span>
+						<h2>Project Engineer</h2>
+						<span class="position">AB Plastomech Pvt. Ltd.</span>
+						<p class="mt-4">AB Plastomech gives custom-made Automation Solution to Plastic,Autocomponent,Pharma & Food Industires.Automation for Process and Assembly requirments.
+							<ul>
+								<li> Managed 3+ 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐩𝐫𝐨𝐣𝐞𝐜𝐭𝐬 from 𝐢𝐧𝐢𝐭𝐢𝐚𝐭𝐢𝐨𝐧 to 𝐝𝐞𝐥𝐢𝐯𝐞𝐫𝐲, and successfully deployed 3 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐩𝐮𝐫𝐩𝐨𝐬𝐞 𝐦𝐚𝐜𝐡𝐢𝐧𝐞𝐬 (𝐒𝐏𝐌) during my tenure.</li>
+								<li>Reduced project costs by 15% through 𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 𝐫𝐞𝐬𝐨𝐮𝐫𝐜𝐞 𝐚𝐥𝐥𝐨𝐜𝐚𝐭𝐢𝐨𝐧 and effective 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 𝐩𝐥𝐚𝐧𝐧𝐢𝐧𝐠.</li>
+								<li>Utilized 𝐒𝐨𝐥𝐢𝐝𝐖𝐨𝐫𝐤𝐬 software to develop precise 3D CAD models and engineering drawings, ensuring accurate design specifications.</li>
+								<li>Provided working demos to 𝐬𝐭𝐚𝐤𝐞𝐡𝐨𝐥𝐝𝐞𝐫𝐬, leading to faster decision-making and alignment on project objectives.</li>
+								<li>Improved design 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐩𝐫𝐨𝐜𝐞𝐬𝐬, resulting in a 20% 𝐝𝐞𝐜𝐫𝐞𝐚𝐬𝐞 in 𝐦𝐚𝐧𝐮𝐟𝐚𝐜𝐭𝐮𝐫𝐢𝐧𝐠 𝐞𝐫𝐫𝐨𝐫𝐬 and 𝐫𝐞𝐰𝐨𝐫𝐤.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022- 2025</span>
+    					<h2>Master of Science, Mechanical Engineering</h2>
+    					<span class="position"> North Dakota State University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2019 </span>
+    					<h2>Bachelor of Science, Mechanical Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p>
+						<a href="https://drive.google.com/file/d/163uR0yFuPVhreY5MEezw3n526dXonbY_/view?usp=sharing" class="btn btn-primary py-4 px-5">
+							Download CV
+						</a>
+					</p>
+				</div>
+			</div>			
+    	</div>
+    </section>
+
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of the Industrial and Acadmeic Projects that I have hands on experience with</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="##" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="##">Advancing 𝐀𝐮𝐭𝐨𝐧𝐨𝐦𝐨𝐮𝐬 𝐁𝐚𝐜𝐤𝐢𝐧𝐠 of 𝐓𝐫𝐚𝐜𝐭𝐨𝐫-𝐓𝐫𝐚𝐢𝐥𝐞𝐫 Systems</a></h3>
+                <p> • 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡𝐞𝐝 on 𝐓𝐞𝐫𝐫𝐚𝐦𝐞𝐜𝐡𝐚𝐧𝐢𝐜𝐬 to analyze the 𝐟𝐨𝐫𝐜𝐞𝐬 on the 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐩𝐚𝐭𝐜𝐡, leading to enhancements in 𝐯𝐞𝐡𝐢𝐜𝐥𝐞 𝐜𝐨𝐧𝐭𝐫𝐨𝐥 during performing backing maneuver. </p>
+					• Developed a 𝐡𝐢𝐠𝐡-𝐟𝐢𝐝𝐞𝐥𝐢𝐭𝐲 𝐦𝐚𝐭𝐡𝐞𝐦𝐚𝐭𝐢𝐜𝐚𝐥 𝐦𝐨𝐝𝐞𝐥 using 𝐦𝐮𝐥𝐭𝐢𝐛𝐨𝐝𝐲 𝐝𝐲𝐧𝐚𝐦𝐢𝐜𝐬 𝐚𝐩𝐩𝐫𝐨𝐚𝐜𝐡 to improve 𝐦𝐚𝐧𝐞𝐮𝐯𝐞𝐫𝐚𝐛𝐢𝐥𝐢𝐭𝐲 in 𝐜𝐨𝐧𝐟𝐢𝐧𝐞𝐝 𝐬𝐩𝐚𝐜𝐞𝐬.</p>
+					• Designing a 𝐌𝐈𝐌𝐎 𝐜𝐨𝐧𝐭𝐫𝐨𝐥𝐥𝐞𝐫 and conducting 𝐬𝐢𝐦𝐮𝐥𝐚𝐭𝐢𝐨𝐧𝐬 to assess its 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, to achieve seamless 𝐛𝐚𝐜𝐤𝐮𝐩 𝐦𝐚𝐧𝐞𝐮𝐯𝐞𝐫𝐬 within a 𝟓% 𝐜𝐥𝐞𝐚𝐫𝐚𝐧𝐜𝐞 𝐦𝐚𝐫𝐠𝐢𝐧..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="##" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="##">Potato 𝐃𝐢𝐬𝐞𝐚𝐬𝐞 𝐃𝐞𝐭𝐞𝐜𝐭𝐢𝐨𝐧 and 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐓𝐰𝐢𝐧 for 𝐑𝐞𝐦𝐨𝐭𝐞 𝐌𝐨𝐧𝐢𝐭𝐨𝐫𝐢𝐧𝐠</a></h3>
+                <p> • Contributed to a project utilizing 𝐓𝐞𝐧𝐬𝐨𝐫𝐅𝐥𝐨𝐰 and 𝐘𝐎𝐋𝐎𝐯𝟓 models to enhance potato crop health detection, focusing on optimizing 𝐚𝐜𝐜𝐮𝐫𝐚𝐜𝐲 with the potato leaf dataset. </p>
+					• Achieved notable advancements in 𝐝𝐢𝐬𝐞𝐚𝐬𝐞 𝐝𝐞𝐭𝐞𝐜𝐭𝐢𝐨𝐧 accuracy by implementing innovative methodologies. </p>
+					• Developed the integration of a 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐭𝐰𝐢𝐧 𝐦𝐨𝐝𝐞𝐥 into practical agricultural settings, utilizing 𝐔𝐧𝐢𝐭𝐲 𝐄𝐧𝐠𝐢𝐧𝐞 and 𝐎𝐜𝐮𝐥𝐮𝐬 𝐑𝐢𝐟𝐭 𝟐 technology. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="##" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="##"> 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐌𝐨𝐝𝐞𝐥𝐥𝐢𝐧𝐠 of a 𝐏𝐞𝐧𝐝𝐮𝐛𝐨𝐭</a></h3>
+                <p> • Formulated the equations of motion for a Pendubot system using the Lagrangian dynamics method, enabling precise simulation and modeling 
+					  of system behavior to support controller design and validation. </p>
+					• Designed a PD controller to stabilize the Pendubot at upright equilibrium with minimal oscillations.</p>
+					• Successfully Validated control strategy via simulation, ensuring stability, torque accuracy, and improved response.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="##" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="##"></a>Automated Conveyor Sorting System, Allen Bradley PLC, Photoelectric Sensors, Actuator</h3>
+				  <p> ● Engineered and executed the development of an automated sorting system, strategically employing photoelectric sensors to ensure sorting of automotive parts based on size and color. </p>
+					  ● Configured Programmable Logic controller (PLC) to control the conveyor belt speed, sensors, and actuator mechanisms, ensuring accurate and efficient sorting of items into designated bins. </p>
+					  ● Attained a remarkable 90% reduction in sorting errors, thereby optimizing process efficiency and operational accuracy.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="##" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="##">Defect detection and Sorting Automation, Industrial Camera Lighting, IPS, Conveyor System</a></h3>
+				  <p>● Developed and deployed an automated defect detection system using industrial vision and IPS, boosting accuracy by 25% and reducing manual inspection. </p>
+					 ● Implemented a conveyor system for automated product handling, increasing sorting speed by 30% and enhancing overall production efficiency. </p>
+					 ● Achieved a 15% reduction in sorting errors and rework costs through the use of advanced image analysis techniques, leading to substantial cost savings for the company. </p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="250">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve Control Engineering &amp; Robotics Problems </h4>
+						<br>
+						<p><a href="https://github.com/SahDhirendra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3> 
+				<p>Fargo, North Dakota, USA </p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 1- 701-729-6553</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">sahdhirendra0101@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/163uR0yFuPVhreY5MEezw3n526dXonbY_/view?usp=sharing">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9BRMUvDz7JUsAyERiAcgy3LtTQPHahjvxI7m_CApWlJE7Tg/viewform?usp=header" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/dhirendrasah"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/dhir_0101"><span class="icon-twitter"></span></a></li>
+				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+>>>>>>> ed6bf1ac9962a78e87a34494748fe7416c9131c8
